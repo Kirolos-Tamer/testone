@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Changa:wght@200..800&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    height: auto;
+    overflow-x: hidden;
+}
+
+nav {
+    height: 65px;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 200;
+}
+
+.logo {
+    height: 55px;
+}
+
+.toggler {
+    display: none;
+    height: 35px;
+}
+
+.links a {
+    font-family: "Abel", sans-serif;
+    font-size: 21px;
+    text-decoration: none;
+    color: #d8b454;
+    position: relative;
+    margin-left: 15px;
+    padding: 0px 15px;
+}
+
+.links a:hover {
+    border-bottom: 3px solid #d8b454;
+    transition: .1s;
+}
+
+.discover:hover {
+    background-color: white;
+    transition: .3s;
+}
+
+.more-sketch:hover {
+    background-color: white;
+    transition: .3s;
+}
+
+@media screen and (max-width: 700px) {
+    .links {
+        display: none;
+        width: 300px;
+        height: calc(100vh - 60px);
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.toggler {
+    display: block;
+    cursor: pointer;
+}
+.links a {
+    padding-bottom: 20px;
+}
+}
+
+.main-sketch-section {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://scontent.fcai19-3.fna.fbcdn.net/v/t39.30808-6/272950728_112649751327087_6071411021776127991_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=NKkpfX8Vzy8Q7kNvgE7A6Ub&_nc_ht=scontent.fcai19-3.fna&_nc_gid=ApHpQAU-zt4gwIEZdVCTag-&oh=00_AYDnrwZYXQKvxcqgFjgalaxvMapKrMGyWhLKlkni2yrV0w&oe=66E09756");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-sketch-section-cover {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.455);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.main-sketch-section-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+}
+
+.main-sketch-section-content h1 {
+    font-family: "Changa", sans-serif;
+    font-weight: 500;
+    font-size: 80px;
+    color: #d8b454;
+    /* margin-bottom: 135px; */
+}
+
+.main-sketch-section-content button {
+    background-color: #d8b454;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 15px 30px;
+    font-family: "Changa", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 75px;
+}
+
+.sketch-cards-section {
+    height: 100vh;
+    width: 100vw;
+}
+
+.sketch-cards-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sections-header {
+    font-family: "Changa", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    padding: 50px;
+}
+
+.cards {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 0 100px; */
+}
+
+.card {
+    height: auto;
+    width: 350px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d8b454;
+}
+
+.sketch,
+.decorations,
+.Workshops {
+    height: 234px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h1 {
+    margin: 20px 0 10px;
+    font-family: "Abel", sans-serif;
+    font-weight: bold;
+    font-size: 1.17em;
+}
+.card p {
+    width: 80%;
+    text-align: justify;
+    font-family: "Abel", sans-serif;
+}
+
+.know_more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.know_more a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 0 20px;
+    font-family: "Abel", sans-serif;
+    transition: 0.7s;
+}
+
+.know_more a:hover {
+    color: #d8b454;
+}
+
+.know_more span {
+    height: 20px;
+    margin-left: 2.5px;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+.know_more span:hover {
+    cursor: pointer;
+    color: #d8b454;
+}
+
+@media screen and (max-width: 800px) {
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+.section-sketch {
+    width: 100vw;
+    height: auto;
+}
+
+.full_sketch_div {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sketch-parg {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.sketch-parg h1 {
+    font-size: 45px;
+    text-align: center;
+    font-family: "Changa", sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.sketch-parg p {
+    font-family: "Abel", sans-serif;
+    width: 400px;
+}
+
+.left-sketch img,
+.right-sketch img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    margin: 50px 0;
+    border-radius: 10px;
+}
+
+.left-sketch {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.right-sketch {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.left-sketch img:hover,
+.right-sketch img:hover {
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.more-sketch {
+    align-self: center;
+    border-style: none;
+    background-color: #d8b454;
+    color: black;
+    font-size: 14px;
+    font-weight: 100;
+    padding: 20px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+.full_sketch_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-sketch,.right-sketch {
+    margin: 0;
+}
+}
+
+.card2 {
+    height: 400px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.article-parg {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 127px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px 40px 0 0;
+}
+
+.article-parg h1 {
+    font-family: "Abel", sans-serif;
+    color: wheat;
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.article-parg button {
+    background-color: #d8b454;
+    border-style: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.article-parg button:hover {
+    background-color: white;
+    transition: 1s;
+}
+
+.card3 {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 10px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.card3 h1 {
+    font-size: 75px;
+    color: #d8b454;
+    text-align: center;
+    transform: rotate(185deg);
+    font-weight: 900;
+    position: relative;
+    right: 70px;
+    top: 20px;
+}
+
+.parag {
+    font-family: "Abel", sans-serif;
+    color: #d8b454;
+    text-align: justify;
+    width: 55%;
+}
+
+.signature {
+    font-family: "Abel", sans-serif;
+    color: #d8b454;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.last-section {
+    height: 365px;
+    width: 100vw;
+    background-color: #000000;
+}
+
+.end {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 90px 0 90px;
+}
+
+.tree {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tree img {
+    height: 70px;
+}
+
+.tree p {
+    color: white;
+    font-size: 16px;
+    font-family: "Abel", sans-serif;
+    text-align: justify;
+    width: 305px;
+    margin-top: 30px;
+}
+
+.contact {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h1,
+.main-links h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    color: white;
+    font-family: "Abel", sans-serif;
+    text-transform: uppercase;
+}
+
+
+.social button {
+    border-radius: 60px;
+    padding: 13px;
+    margin: 0px 5px;
+    align-items: center;
+    
+}
+.social button img {
+    width: 25px;
+    height: 25px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fb:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 126);
+    transition: .4s;
+}
+
+.insta:hover {
+    cursor: pointer;
+    background-color: rgba(129, 0, 75, 0.712);
+    transition: .4s;
+}
+
+.main-links {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-links a {
+    text-decoration: none;
+    color: white;
+    align-self: flex-start;
+    margin-left: 120px;
+    font-family: "Abel", sans-serif;
+    margin-top: 8px;
+}
+
+.main-links a:hover {
+    color: #b79632;
+    transition: 1s;
+}
+
+.hr {
+    background-color: white;
+    height: 1.5px;
+    width: 100vw;
+}
+.foot p {
+    color: white;
+    text-align: center;
+    font-family: "Abel", sans-serif;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
